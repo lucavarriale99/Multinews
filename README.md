@@ -23,7 +23,7 @@ The pipeline we propose, and that you can reproduce, is the following:
 ### Dataset Download 
 The dataset exploited are the following: 
 1. [Multi-News dataset](https://github.com/Alex-Fabbri/Multi-News)
-2. AIPubSumm, CSPubSumm, and BIOPubSumm. These datasets are not publicly available, so some directory folders may be created: plese refere to [this repo](https://github.com/arcangeloC-137/THExt) for further information.
+2. AIPubSumm, CSPubSumm, and BIOPubSumm. These datasets are not publicly available, so some directory folders may be created: plese refere to [this repo](https://github.com/MorenoLaQuatra/THExt) for further information.
 
 ### Execution Guide
 
@@ -45,7 +45,7 @@ If the running is performed locally, please install the requirements in the file
 Firstly, we preprocess the input news articles, from dataset [1], using techniques such as stopword removal, sentence segmentation, and separation of articles of the same cluster, which enhances the performance of the summarization model. During this stage a tokenized unique text is created merging the texts of all the articles related to the same news. Also a new context is defined, merging the first 20\% of sentences of each article for the same cluster of news.
 
 <div align="center">
-  <img src="https://github.com/arcangeloC-137/Multinews/blob/main/imgs/Multi-Document%20THExt%202.png" alt="Alt text" title="Preprocessing pipeline" width="500" height="300">
+  <img src="https://github.com/lucavarriale99/Multinews/blob/main/imgs/Multi-Document%20THExt%202.png" alt="Alt text" title="Preprocessing pipeline" width="500" height="300">
 </div>
 
 Next, we fine-tune the chosen models, BERT and LongFormer, on the Multi-News dataset, which helps obtain the optimized weights for the models. Finally, we use a fully connected layer-based regression to produce the resulting highlights for the cluster of articles.
@@ -61,7 +61,7 @@ The LED model, which is an extension of the Longformer, was employed to create a
 
 <p>
  
- Please, for further information, and to see our results, refere to the relative [`paper`](https://github.com/arcangeloC-137/Multinews/blob/main/Multi-document%20Summarization%20for%20News%20Articles%20Highlights%20Extraction.pdf).
+ Please, for further information, and to see our results, refere to the relative [`paper`](https://github.com/lucavarriale99/Multinews/blob/main/Multi-document%20Summarization%20for%20News%20Articles%20Highlights%20Extraction.pdf).
  
  ----
   
